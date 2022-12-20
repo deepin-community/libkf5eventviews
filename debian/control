@@ -1,0 +1,72 @@
+Source: libkf5eventviews
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Norbert Preining <norbert@preining.info>,
+           Sandro Knauß <hefee@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libkf5akonadi-dev (>= 4:21.08.1~),
+               libkf5akonadicalendar-dev (>= 4:21.08.1~),
+               libkf5calendarcore-dev (>= 5:5.83.0~),
+               libkf5calendarsupport-dev (>= 4:21.08.1~),
+               libkf5calendarutils-dev (>= 4:21.08.1~),
+               libkf5codecs-dev (>= 5.83.0~),
+               libkf5completion-dev (>= 5.83.0~),
+               libkf5contacts-dev (>= 5:5.83.0~),
+               libkf5guiaddons-dev (>= 5.83.0~),
+               libkf5holidays-dev (>= 1:5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5iconthemes-dev (>= 5.83.0~),
+               libkf5libkdepim-dev (>= 4:21.08.1~),
+               libkf5mime-dev (>= 21.08.1~),
+               libkf5service-dev (>= 5.83.0~),
+               libkgantt-dev (>= 1.4.0~),
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15.0~),
+               qttools5-dev (>= 5.11.0~),
+Standards-Version: 4.6.0
+Homepage: https://invent.kde.org/pim/eventviews
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/eventviews
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/eventviews.git
+Rules-Requires-Root: no
+
+Package: libkf5eventviews-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: KDE PIM event handling - data files
+ This library provides an event creator for KDE PIM.
+ .
+ This package provides the data files used by the library.
+
+Package: libkf5eventviews-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libkf5akonadi-dev (>= 4:21.08.1~),
+         libkf5akonadicalendar-dev (>= 4:21.08.1~),
+         libkf5calendarsupport-dev (>= 4:21.08.1~),
+         libkf5calendarutils-dev (>= 4:21.08.1~),
+         libkf5eventviews5abi1 (= ${binary:Version}),
+         ${misc:Depends},
+Description: KDE PIM event handling - devel files
+ This library provides an event creator for KDE PIM.
+ .
+ This package provides the development files.
+
+Package: libkf5eventviews5abi1
+X-Debian-ABI: 1
+X-CMake-Target: KF5EventViews
+Architecture: any
+Multi-Arch: same
+Depends: libkf5eventviews-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: KDE PIM event handling - library
+ This library provides an event creator for KDE PIM.
+ .
+ This package provides the shared libraries.
+Provides: ${ABI:VirtualPackage}

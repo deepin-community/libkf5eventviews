@@ -1,0 +1,385 @@
+libkf5eventviews (4:21.08.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:45:29 +0800
+
+libkf5eventviews (4:21.08.1-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.1).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 11 Sep 2021 07:25:15 +0900
+
+libkf5eventviews (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:35:25 +0900
+
+libkf5eventviews (4:21.04.3-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.3).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 09 Jul 2021 10:39:29 +0900
+
+libkf5eventviews (4:21.04.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.1).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 14 May 2021 06:14:11 +0900
+
+libkf5eventviews (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+  * Update Debian ABI Manager patch.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 13 May 2021 09:46:53 +0900
+
+libkf5eventviews (4:20.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Update patch hunks.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 16 Dec 2020 01:50:51 +0100
+
+libkf5eventviews (4:20.08.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Update standards version to 4.5.1, no changes needed.
+  * Port stable_abi.patch to QRandomGenerator, so it builds with Qt 5.15.
+    (Closes: #974108)
+  * Re-export upstream signing key without extra signatures.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 22 Nov 2020 15:34:32 +0100
+
+libkf5eventviews (4:20.08.2-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 20 Oct 2020 00:09:46 +0200
+
+libkf5eventviews (4:20.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Update repository related entries to metadata file.
+  * Add Bug-* entries to metadata file.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Oct 2020 00:53:25 +0200
+
+libkf5eventviews (4:20.04.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Explicitly add the gettext build dependency.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+  * Unregister the old /etc/xdg/eventviews.categories, and
+    /etc/xdg/eventviews.renamecategories conffiles.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 23 Aug 2020 11:16:05 +0200
+
+libkf5eventviews (4:20.04.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.1).
+  * Update build-deps and deps with the info from cmake.
+  * Update patch hunks.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 27 May 2020 00:01:05 +0200
+
+libkf5eventviews (4:20.04.0-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Update watch file to the new release-service location.
+  * Bump compat level to 13.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (20.04.0).
+  * Update build-deps and deps with the info from cmake.
+  * Update patch hunks.
+  * Enable hardening all.
+  * Set fields Upstream-Name, Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 13 May 2020 12:24:56 +0200
+
+libkf5eventviews (4:19.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 30 Nov 2019 22:55:52 +0100
+
+libkf5eventviews (4:19.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Remove breaks against kde-l10n packages.
+  * Update install files for new upstream release.
+  * Update patch hunks.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 08 Nov 2019 10:42:04 +0100
+
+libkf5eventviews (4:18.08.3-3) unstable; urgency=medium
+
+    * Release to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Nov 2019 23:54:28 +0100
+
+libkf5eventviews (4:18.08.3-2) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.1 (No changes needed).
+  * Bump compat level to 12.
+  * Add myself to Uploaders.
+  * Delete not needed Breaks/Confilcts.
+  * Use virtual packages to bundle KDEPIM.
+  * Enforce depdendencies between KDEPIM packages to enable bundling.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 06 Oct 2019 22:44:26 +0200
+
+libkf5eventviews (4:18.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (18.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Add patch to keep ABI (EventViews::Prefs::createNewColor).
+  * Bump Standards-Version to 4.3.0 (No changes needed).
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 04 Feb 2019 16:03:20 +0100
+
+libkf5eventviews (4:18.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.2.1 (No changes needed).
+  * Follow stable releases in KDE again.
+  * New upstream release (18.08.1).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 02 Oct 2018 23:21:07 +0200
+
+libkf5eventviews (4:18.07.90-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update watch file to match unstable releases, too.
+  * New upstream release (18.07.90).
+  * Bump Standards-Version to 4.2.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Update symbols from build for 18.07.90.
+  * Use DebianABIManager to handle eventviews.
+  * Update library from libkf5eventviews5 -> libkf5eventviews5abi1.
+  * Update copyright file for new upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 20 Aug 2018 15:20:22 +0200
+
+libkf5eventviews (4:17.12.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update symbols files from logs of buildds. (Closes: #895495)
+  * Bump Standards-Version to 4.1.4, no changes required.
+  * Remove the unused files for autopkgtests.
+  * Add Build-Depends-Package in symbols file.
+  * Remove unused ${shlibs:Depends} substvar from libkf5eventviews-dev.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 07 May 2018 05:11:30 +0200
+
+libkf5eventviews (4:17.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.3).
+  * Update symbols from buildds for 4:17.12.2
+  * Update build-deps and deps with the info from cmake.
+  * use secure copyright format uri.
+  * Use secure uri in d/watch.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 31 Mar 2018 18:27:05 +0200
+
+libkf5eventviews (4:17.12.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.2).
+  * Update Vcs links to salsa.
+  * Bump Standards-Version to 4.1.3 (No changes needed).
+  * Update build-deps and deps with the info from cmake
+  * Update copyright file.
+  * Add symbols files for libraries.
+  * Bump debhelper build-dep and compat to 11.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 09 Mar 2018 15:15:21 +0100
+
+libkf5eventviews (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.08.3).
+  * Bump Standards-Version to 4.1.2 (No changes needed).
+  * Get rid of unnessary break/replaces of kde-l10n-(ast|eo).
+  * Remove not needed Build-Deps.
+  * Bump debhelper build-dep and compat to 10.
+  * Set l10npkgs_firstversion_ok to 4:16.04.3-9~
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 21 Dec 2017 17:58:47 +0100
+
+libkf5eventviews (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (17.08)
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Sep 2017 22:19:29 +0200
+
+libkf5eventviews (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:31:07 +0000
+
+libkf5eventviews (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:17:26 +0000
+
+libkf5eventviews (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:19:55 +0000
+
+libkf5eventviews (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:10:03 +0000
+
+libkf5eventviews (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 20 Apr 2017 21:56:08 +0000
+
+libkf5eventviews (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:46:33 +0000
+
+libkf5eventviews (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:55:59 +0000
+
+libkf5eventviews (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:13:46 +0000
+
+libkf5eventviews (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:23:09 +0000
+
+libkf5eventviews (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:51:43 +0000
+
+libkf5eventviews (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:38:45 +0000
+
+libkf5eventviews (4:16.08.1-1~1.gbpa5c73d) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @a5c73d5098d5b58f78c368e35e9165c7c6298a4a **
+
+  [ Maximiliano Curia ]
+  ** SNAPSHOT build @7df828be0f7f033d1f7f2425803cdca4fd876024 **
+
+  * UNRELEASED
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 08 Sep 2016 21:12:33 +0200
+
+libkf5eventviews (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:04:55 +0000
+
+libkf5eventviews (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:47:05 +0000
+
+libkf5eventviews (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 03 Aug 2016 12:50:42 +0000
+
+libkf5eventviews (4:16.04.2-2) unstable; urgency=low
+
+  * Release to unstable.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 07 Jul 2016 10:18:41 +0200
+
+libkf5eventviews (4:16.04.2-1) experimental; urgency=medium
+
+  [ Automatic packaging ]
+  * Refresh patches
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Jul 2016 21:34:18 +0200
+
+libkf5eventviews (4:16.04.1-1) experimental; urgency=medium
+
+  * Initial release.
+  * Add missing Breaks/Replasces
+  * Add -dev dependencies needed by the cmake file
+  * Add new upstream patch: upstream_add_copying_files.patch
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 06 Jun 2016 22:22:20 +0200

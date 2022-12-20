@@ -1,0 +1,2 @@
+rm_conffile /etc/xdg/eventviews.categories 4:20.04.1-2~
+rm_conffile /etc/xdg/eventviews.renamecategories 4:20.04.1-2~
